@@ -47,31 +47,46 @@
 #include "MDR32F9Qx_lib.h"
 #include "stdint.h"
       
-//#define USE_1986VE91T
+#define USE_1986VE91T
 //#define USE_1986VE92U
 //#define USE_1986VE93U
-#define USE_1901VC1F
+//#define USE_1901VC1F
 
 #if defined (USE_1986VE91T)
 #define LED_PORT                MDR_PORTD
 #define LED_RST_CLK_PCLK        RST_CLK_PCLK_PORTD
-#define LED_PINS                PORT_Pin_10
+#define LED_PINS                (PORT_Pin_10 | PORT_Pin_11 | PORT_Pin_12 | PORT_Pin_13 | PORT_Pin_14)
+#define LED_1                   PORT_Pin_10
+#define LED_2                   PORT_Pin_11
+#define LED_3                   PORT_Pin_12
+#define LED_4                   PORT_Pin_13
+#define LED_5                   PORT_Pin_14
 
 #elif defined (USE_1986VE92U)
 #define LED_PORT                MDR_PORTC
 #define LED_RST_CLK_PCLK        RST_CLK_PCLK_PORTC
-#define LED_PINS                PORT_Pin_0
+#define LED_PINS                (PORT_Pin_0 | PORT_Pin_1)
+#define LED_1                   PORT_Pin_0
+#define LED_2                   PORT_Pin_1
 
 #elif defined (USE_1986VE93U)
 #define LED_PORT                MDR_PORTF
 #define LED_RST_CLK_PCLK        RST_CLK_PCLK_PORTF
-#define LED_PINS                PORT_Pin_0
-
+#define LED_PINS                (PORT_Pin_0 | PORT_Pin_1)
+#define LED_1                   PORT_Pin_0
+#define LED_2                   PORT_Pin_1
+      
 #elif defined (USE_1901VC1F)
 #define LED_PORT                MDR_PORTB
 #define LED_RST_CLK_PCLK        RST_CLK_PCLK_PORTB
-#define LED_PINS                PORT_Pin_15
-
+#define LED_PINS                (PORT_Pin_15 | PORT_Pin_14 | PORT_Pin_13 | PORT_Pin_12 | PORT_Pin_11)
+#define LED_1                   PORT_Pin_15
+#define LED_2                   PORT_Pin_14
+#define LED_3                   PORT_Pin_13
+#define LED_4                   PORT_Pin_12
+#define LED_5                   PORT_Pin_11
+      
+      
 #endif
       
 

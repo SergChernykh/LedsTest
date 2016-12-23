@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\IAR\common\bin\cspybat" -f "C:\Users\serge\OneDrive\Documents\ÒÓÑÓĞ\4 êóğñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\settings\test1.Release.general.xcl" --backend -f "C:\Users\serge\OneDrive\Documents\ÒÓÑÓĞ\4 êóğñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\settings\test1.Release.driver.xcl" 
+"C:\IAR\common\bin\cspybat" -f "C:\Users\serge\OneDrive\Documents\ÒÓÑÓĞ\4 êóğñ\ÂÑäÎÏ\Èíä\test1\settings\test1.Release.general.xcl" --backend -f "C:\Users\serge\OneDrive\Documents\ÒÓÑÓĞ\4 êóğñ\ÂÑäÎÏ\Èíä\test1\settings\test1.Release.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\IAR\common\bin\cspybat" -f "C:\Users\serge\OneDrive\Documents\ÒÓÑÓĞ\4 êóğñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\settings\test1.Release.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\serge\OneDrive\Documents\ÒÓÑÓĞ\4 êóğñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\settings\test1.Release.driver.xcl" 
+"C:\IAR\common\bin\cspybat" -f "C:\Users\serge\OneDrive\Documents\ÒÓÑÓĞ\4 êóğñ\ÂÑäÎÏ\Èíä\test1\settings\test1.Release.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\serge\OneDrive\Documents\ÒÓÑÓĞ\4 êóğñ\ÂÑäÎÏ\Èíä\test1\settings\test1.Release.driver.xcl" 
 
 @echo off 
 :end

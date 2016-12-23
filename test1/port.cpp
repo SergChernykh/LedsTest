@@ -12,10 +12,20 @@ void Port::DeInit()
 
 void Port::SetBits()
 {
-    PORT_SetBits(Name, Pin);
+    PORT_SetBits(Name, Pins);
+}
+
+void Port::SetBits(uint32_t pinIndex)
+{
+    PORT_SetBits(Name, pinIndex);
 }
 
 void Port::ResetBits()
 {
-    PORT_ResetBits(Name, Pin);
+    PORT_ResetBits(Name, Pins);
+}
+
+void Port::ResetBits(uint32_t pinIndex)
+{
+    PORT_ResetBits(Name, pinIndex);
 }

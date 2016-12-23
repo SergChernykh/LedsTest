@@ -1,4 +1,4 @@
-"C:\Users\serge\OneDrive\Documents\рсясп\4 ЙСПЯ\бяДно\хг\Trunk\test1\port.cpp"
+"C:\Users\serge\OneDrive\Documents\рсясп\4 ЙСПЯ\бяДно\хМД\test1\port.cpp"
 -std=c++98
 -ferror-limit=100
 -I
@@ -8,9 +8,9 @@ C:\IAR\arm\CMSIS\Include
 -I
 C:\IAR\arm\CMSIS\Device\Milandr\MDR32F9Qx\inc
 -I
-C:\Users\serge\OneDrive\Documents\рсясп\4 ЙСПЯ\бяДно\хг\Trunk\test1\_Config
+C:\Users\serge\OneDrive\Documents\рсясп\4 ЙСПЯ\бяДно\хМД\test1\_Config
 -I
-C:\Users\serge\OneDrive\Documents\рсясп\4 ЙСПЯ\бяДно\хг\Trunk\test1\_MCU_drv
+C:\Users\serge\OneDrive\Documents\рсясп\4 ЙСПЯ\бяДно\хМД\test1\_MCU_drv
 -I
 C:\IAR\arm\inc
 -I
@@ -24,9 +24,9 @@ C:\IAR\arm\CMSIS\Include
 -I
 C:\IAR\arm\CMSIS\Device\Milandr\MDR32F9Qx\inc
 -I
-C:\Users\serge\OneDrive\Documents\рсясп\4 ЙСПЯ\бяДно\хг\Trunk\test1\_Config
+C:\Users\serge\OneDrive\Documents\рсясп\4 ЙСПЯ\бяДно\хМД\test1\_Config
 -I
-C:\Users\serge\OneDrive\Documents\рсясп\4 ЙСПЯ\бяДно\хг\Trunk\test1\_MCU_drv
+C:\Users\serge\OneDrive\Documents\рсясп\4 ЙСПЯ\бяДно\хМД\test1\_MCU_drv
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

@@ -9,14 +9,16 @@ class Port
 {
 public:
     MDR_PORT_TypeDef*   Name;
-    uint32_t            Pin;
+    uint32_t            Pins;
     PORT_InitTypeDef*   InitStruct;
     
 public:
     void Init();
     void DeInit();
     void SetBits();
+    void SetBits(uint32_t pinIndex);
     void ResetBits(); 
+    void ResetBits(uint32_t pinIndex);
 }
 
 
