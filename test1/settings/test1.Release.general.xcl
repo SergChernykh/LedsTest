@@ -1,0 +1,13 @@
+"C:\IAR\arm\bin\armproc.dll" 
+
+"C:\IAR\arm\bin\armjlink2.dll" 
+
+"C:\Users\serge\OneDrive\Documents\ÒÓÑÓĞ\4 êóğñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\Exe\test1.out" 
+
+--plugin "C:\IAR\arm\bin\armbat.dll" 
+
+--flash_loader "C:\IAR\arm\config\flashloader\Milandr\FlashMDR32F1x.board" 
+
+
+
+

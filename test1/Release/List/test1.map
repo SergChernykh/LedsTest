@@ -1,0 +1,225 @@
+###############################################################################
+#
+# IAR ELF Linker V7.50.3.10732/W32 for ARM                23/Dec/2016  10:09:53
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4
+#        êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\Exe\test1.out
+#    Map file     =  
+#        C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4
+#        êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\List\test1.map
+#    Command line =  
+#        "C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4
+#        êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\Obj\main.o"
+#        "C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4
+#        êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\Obj\MDR32F9Qx_it.o"
+#        "C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4
+#        êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\Obj\MDR32F9Qx_port.o"
+#        "C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4
+#        êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\Obj\MDR32F9Qx_rst_clk.o"
+#        "C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4
+#        êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\Obj\port.o"
+#        "C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4
+#        êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\Obj\startup_MDR32F9Qx.o"
+#        "C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4
+#        êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\Obj\system_MDR32F9Qx.o" -o
+#        "C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4
+#        êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\Exe\test1.out" --redirect
+#        _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --map
+#        "C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4
+#        êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\List\test1.map" --config
+#        "C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4
+#        êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\_Config\MDR32F1.icf" --entry
+#        __iar_program_start --inline --no_vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Language  = EC++
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0801ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20007fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address   Size  Object
+  -------            ----        -------   ----  ------
+"A1":                                      0xc0
+  .intvec            ro code  0x08000000   0xc0  startup_MDR32F9Qx.o [1]
+                            - 0x080000c0   0xc0
+
+"P1":                                     0x530
+  .text              ro code  0x080000c0  0x240  MDR32F9Qx_port.o [1]
+  .text              ro code  0x08000300   0xe4  system_MDR32F9Qx.o [1]
+  .text              ro code  0x080003e4   0x78  main.o [1]
+  .text              ro code  0x0800045c   0x24  MDR32F9Qx_rst_clk.o [1]
+  .text              ro code  0x08000480   0x36  port.o [1]
+  .text              ro code  0x080004b6   0x2c  copy_init3.o [4]
+  .text              ro code  0x080004e4   0x28  data_init.o [4]
+  .iar.init_table    const    0x0800050c   0x14  - Linker created -
+  .text              ro code  0x08000520   0x1a  cmain.o [4]
+  .text              ro code  0x0800053a    0x4  exit.o [3]
+  .text              ro code  0x08000540    0xa  cexit.o [4]
+  .text              ro code  0x0800054c    0xc  XXexit.o [4]
+  .text              ro code  0x08000558   0x10  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x08000568    0xc  cstartup_M.o [4]
+  .text              ro code  0x08000574    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x08000578    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x0800057c    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x08000580    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x08000584    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x08000588    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x0800058c    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x08000590    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x08000594    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x08000598    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x0800059c    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005a0    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005a4    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005a8    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005ac    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005b0    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005b4    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005b8    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005bc    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005c0    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005c4    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005c8    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005cc    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005d0    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005d4    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005d8    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005dc    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005e0    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005e4    0x4  startup_MDR32F9Qx.o [1]
+  .text              ro code  0x080005e8    0x4  startup_MDR32F9Qx.o [1]
+  Initializer bytes  const    0x080005ec    0x4  <for P2-1>
+  .rodata            const    0x080005f0    0x0  copy_init3.o [4]
+                            - 0x080005f0  0x530
+
+"P2", part 1 of 2:                          0x4
+  P2-1                        0x20000000    0x4  <Init block>
+    .data            inited   0x20000000    0x4  system_MDR32F9Qx.o [1]
+                            - 0x20000004    0x4
+
+"P2", part 2 of 2:                        0x600
+  CSTACK                      0x20000008  0x600  <Block>
+    CSTACK           uninit   0x20000008  0x600  <Block tail>
+                            - 0x20000608  0x600
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x4:
+          0x080005ec   0x4
+    1 destination range, total size 0x4:
+          0x20000000   0x4
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module               ro code  ro data  rw data
+    ------               -------  -------  -------
+C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4 êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\Obj: [1]
+    MDR32F9Qx_port.o         576
+    MDR32F9Qx_rst_clk.o       36
+    main.o                   120
+    port.o                    54
+    startup_MDR32F9Qx.o      328
+    system_MDR32F9Qx.o       228        4        4
+    ----------------------------------------------
+    Total:                 1 342        4        4
+
+command line: [2]
+    ----------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                     4
+    ----------------------------------------------
+    Total:                     4
+
+rt7M_tl.a: [4]
+    XXexit.o                  12
+    cexit.o                   10
+    cmain.o                   26
+    copy_init3.o              44
+    cstartup_M.o              12
+    data_init.o               40
+    ----------------------------------------------
+    Total:                   144
+
+    Gaps                       6
+    Linker created                     20    1 536
+--------------------------------------------------
+    Grand Total:           1 496       24    1 540
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x0800050c          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08000520          --   Gb  - Linker created -
+?main                   0x08000521         Code  Gb  cmain.o [4]
+CSTACK$$Base            0x20000008          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000608          --   Gb  - Linker created -
+PORT_DeInit             0x080000c1   0x22  Code  Gb  MDR32F9Qx_port.o [1]
+PORT_Init               0x080000e3  0x1ec  Code  Gb  MDR32F9Qx_port.o [1]
+PORT_ResetBits          0x080002e5   0x18  Code  Gb  MDR32F9Qx_port.o [1]
+PORT_SetBits            0x080002cf   0x16  Code  Gb  MDR32F9Qx_port.o [1]
+Port::DeInit()          0x0800048f    0xc  Code  Gb  port.o [1]
+Port::Init()            0x08000481    0xe  Code  Gb  port.o [1]
+Port::ResetBits()       0x080004a9    0xe  Code  Gb  port.o [1]
+Port::SetBits()         0x0800049b    0xe  Code  Gb  port.o [1]
+RST_CLK_PCLKcmd         0x0800045d   0x1e  Code  Gb  MDR32F9Qx_rst_clk.o [1]
+Region$$Table$$Base     0x0800050c          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08000520          --   Gb  - Linker created -
+SystemCoreClock         0x20000000    0x4  Data  Gb  system_MDR32F9Qx.o [1]
+SystemCoreClockUpdate   0x08000301   0x80  Code  Gb  system_MDR32F9Qx.o [1]
+SystemInit              0x08000381   0x40  Code  Gb  system_MDR32F9Qx.o [1]
+__cmain                 0x08000521         Code  Gb  cmain.o [4]
+__exit                  0x0800054d         Code  Gb  XXexit.o [4]
+__iar_copy_init3        0x080004b7   0x2c  Code  Gb  copy_init3.o [4]
+__iar_data_init3        0x080004e5   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x08000569         Code  Gb  cstartup_M.o [4]
+__vector_table          0x08000000         Data  Gb  startup_MDR32F9Qx.o [1]
+_call_main              0x0800052d         Code  Gb  cmain.o [4]
+_exit                   0x08000541         Code  Gb  cexit.o [4]
+_main                   0x08000537         Code  Gb  cmain.o [4]
+delay(unsigned int)     0x080003e5    0xa  Code  Gb  main.o [1]
+exit                    0x0800053b    0x4  Code  Gb  exit.o [3]
+main                    0x080003ef   0x60  Code  Gb  main.o [1]
+
+
+[1] = C:\Users\serge\OneDrive\Documents\ÒÓÑÓÐ\4 êóðñ\ÂÑäÎÏ\ÈÇ\Trunk\test1\Release\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+
+  1 496 bytes of readonly  code memory
+     24 bytes of readonly  data memory
+  1 540 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
