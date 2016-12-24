@@ -46,7 +46,8 @@
 #include "MDR32F9Qx_board.h"
 #include "MDR32F9Qx_lib.h"
 #include "stdint.h"
-      
+
+/*Раскомментируйте необходимый define для выбора платы, остальные должны быть закомментирвованы*/      
 #define USE_1986VE91T
 //#define USE_1986VE92U
 //#define USE_1986VE93U
